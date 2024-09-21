@@ -1,7 +1,12 @@
 const inputBox = document.getElementById('input-box');
 const listContainer = document.querySelector(".list-container");
 const btn = document.getElementById("btn");
+const container = document.querySelector(".container");
 
+const basedColor ="linear-gradient(135deg, #153677, #4e085f);"
+const secondColor ="linear-gradient(135deg, #4e085f, #153677);"
+
+console.log(container.style.backgroundColor);
 /**
  * @void
  * Special function in order to save tasks and their states
@@ -33,7 +38,7 @@ btn.addEventListener('click',()=>{
     }
     inputBox.value ="";
     saveData();
-    console.log(localStorage);
+    // console.log(localStorage);
     
 }) 
 
@@ -52,3 +57,56 @@ listContainer.addEventListener('click', function(e){
 }, false);
 
 show();
+
+   
+
+    const changeBackground = function(){
+        const currentColor = container.style.background;
+        // console.log(currentColor);
+        
+    }
+setInterval(()=>{
+    
+    container.classList.add('bgr');
+    
+    
+
+}, 2000)
+
+
+
+// setInterval(()=>{
+    
+//     container.classList.remove('bgr');
+//     console.log('ko');
+
+// }, 4000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
